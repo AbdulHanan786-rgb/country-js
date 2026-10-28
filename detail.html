@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Details</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-100 dark:bg-slate-950 p-6">
+
+    <div class="max-w-2xl mx-auto mt-10">
+
+        <div class="flex justify-between mb-6">
+            <a href="index.html" class="text-black font-bold text-lg">
+                <=== Back to Explorer </a>
+
+        </div>
+
+        <div id="Loader" class="text-center text-xl dark:text-white">
+            Loading...
+        </div>
+
+        <div id="details-container" class="hidden bg-white dark:bg-slate-900 rounded-2xl shadow-lg overflow-hidden">
+
+            <div class="bg-slate-950 text-white p-5 flex justify-between">
+                <h2 class="font-bold text-white text-lg">Country Details</h2>
+                <span id="countryCode" class="text-white font-bold text-lg"></span>
+            </div>
+
+            <div class="p-6">
+
+                <h1 id="countryName" class="text-3xl font-bold mb-5 dark:text-white"></h1>
+
+                <img id="countryFlag" class="w-full h-56 object-cover rounded-lg mb-6">
+
+                <div class="space-y-4 text-gray-800 dark:text-white">
+
+                    <p><b>Official Name:</b> <span id="officialName" class="font-bold text-cyan-700"></span></p>
+
+                    <p><b>Capital:</b> <span id="countryCapital" class="font-bold text-cyan-700"></span></p>
+
+                    <p><b>Region:</b> <span id="countryRegion" class="font-bold text-cyan-700"></span></p>
+
+                    <p><b>Subregion:</b> <span id="countrySubRegion" class="font-bold text-cyan-700"></span></p>
+
+                    <p><b>Population:</b> <span id="countryPopulation" class="font-bold text-cyan-700"></span></p>
+
+                    <p>
+                        <b>Area:</b>
+                        <span id="countryArea" class="font-bold text-cyan-700"></span>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="detail.js"></script>
+</body>
+
+</html>
